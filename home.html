@@ -1,0 +1,61 @@
+<html>
+    <style>
+         .bg{
+   background-image: url({{ url_for('static', filename='pic Background.jpg') }});
+   background-size:cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   width:100%;
+   height:100%;
+   }
+    .logo{
+        float:right;
+         position:relative;
+         }
+         </style>
+
+    <body >
+        <div class="bg">
+<div class="logo">
+<img src="static\sastra logo.png" alt="logo image" height="100" width="200" />
+</div>
+        <center>
+
+        <h1>     American Sign Language Detection </h1><br>
+        
+          
+            <button class="GFG" background-color:#565656 
+             onclick="window.location.href ='static/about project.png'";style="margin:15px";>
+            About Project
+           </button>
+            
+           <button class="GFG"
+           onclick="window.location.href ='static/Models1.png' ;" style="margin:15px";>
+            Models
+          </button>
+           <button class="GFG" 
+           onclick="window.location.href ='static/Basepaper.pdf' ;"style="margin:15px";>
+           Base Paper
+          </button>
+          <button class="GFG" 
+           onclick="window.location.href ='static/teammates.png' ;"style="margin:15px";>
+           Team Members
+          </button>
+          <button class="GFG" 
+          onclick="window.location.href ='static/Contact.png' ;"style="margin:15px";>
+          Contact
+         </button><br><br><br><br><br><br>
+           
+           
+         <form enctype='multipart/form-data' action='/predict' method="POST">
+            <input type="file" name='inputfile' value="Upload">
+            <input type="submit" , value='predict!' >
+        </form>   
+
+        
+        
+    </center>
+
+    </body>
+</html>
